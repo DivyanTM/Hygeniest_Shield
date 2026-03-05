@@ -1,0 +1,266 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap');
+
+@layer base {
+  * {
+    font-family: 'Barlow', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  .display {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  :root {
+    --gold: #c9a227;
+    --gold-light: #e8bc3d;
+    --dark: #0a0a0f;
+    --dark-2: #111118;
+    --dark-3: #1a1a24;
+    --steel: #8892a4;
+  }
+
+  body {
+    background-color: var(--dark);
+    color: white;
+  }
+}
+
+.gold-line {
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.hero-bg {
+  background: radial-gradient(ellipse at 20% 50%, rgba(201, 162, 39, 0.05) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(201, 162, 39, 0.03) 0%, transparent 50%), linear-gradient(180deg, #0a0a0f 0%, #0d0d14 50%, #0a0a0f 100%);
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.section-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.stat-number {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.capability-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.capability-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 10, 15, 0.95) 0%, rgba(10, 10, 15, 0.5) 50%, transparent 100%);
+  transition: background 0.4s ease;
+}
+
+.capability-card:hover .overlay {
+  background: linear-gradient(to top, rgba(10, 10, 15, 0.98) 0%, rgba(10, 10, 15, 0.7) 60%, rgba(10, 10, 15, 0.3) 100%);
+}
+
+.capability-card .card-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.capability-card:hover .card-desc {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.capability-card .card-line {
+  width: 0;
+  transition: width 0.5s ease;
+  height: 2px;
+  background: var(--gold);
+}
+
+.capability-card:hover .card-line {
+  width: 40px;
+}
+
+.cta-btn {
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+}
+
+.cta-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: translateX(-105%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.cta-btn:hover::before {
+  transform: translateX(0);
+}
+
+.cta-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-scrolled {
+  background: rgba(10, 10, 15, 0.97) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add to your global CSS file */
+
+@keyframes scroll {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  50.1% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.animate-scroll {
+  animation: scroll 2s ease-in-out infinite;
+}
+
+/* Extra small screen breakpoint */
+@media (min-width: 375px) {
+  .xs\:text-5xl {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .xs\:flex-row {
+    flex-direction: row;
+  }
+
+  .xs\:block {
+    display: block;
+  }
+
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xs\:text-\[10px\] {
+    font-size: 10px;
+  }
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+  .title-line {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .title-line {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title-line {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .title-line {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure text doesn't wrap awkwardly */
+.title-line {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .title-line {
+    white-space: normal;
+    word-break: break-word;
+    font-size: 2.2rem;
+  }
+}
+
+/* Card hover effect */
+.gsap-hero-card {
+  transition: all 0.3s ease;
+}
+
+.gsap-hero-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
