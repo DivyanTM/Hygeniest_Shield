@@ -239,10 +239,10 @@ function EngineeringIllustration() {
                 <circle className="particle" cx="60" cy="220" r="2.5" fill="#C9A227" opacity="0.45" />
 
                 {/* Label tags */}
-                <rect x="30" y="55" width="72" height="18" rx="2" fill="#C9A227" opacity="0.1" stroke="#C9A227" strokeWidth="0.8" opacity="0.3" />
-                <text x="66" y="68" textAnchor="middle" fontSize="8" fill="#9a7a20" fontFamily="monospace" letterSpacing="1">ZYTONIK</text>
+                <rect x="30" y="55" width="72" height="18" rx="2" fill="#C9A227" opacity="0.1" stroke="#C9A227" strokeWidth="0.8" />
+                <text x="66" y="68" textAnchor="middle" fontSize="8" fill="#9a7a20" fontFamily="monospace" letterSpacing="1">Hygeniest Shield</text>
 
-                <rect x="280" y="55" width="88" height="18" rx="2" fill="#C9A227" opacity="0.1" stroke="#C9A227" strokeWidth="0.8" opacity="0.3" />
+                <rect x="280" y="55" width="88" height="18" rx="2" fill="#C9A227" opacity="0.1" stroke="#C9A227" strokeWidth="0.8" />
                 <text x="324" y="68" textAnchor="middle" fontSize="8" fill="#9a7a20" fontFamily="monospace" letterSpacing="1">PRECISION</text>
             </svg>
         </div>
