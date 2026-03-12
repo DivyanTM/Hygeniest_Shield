@@ -3,12 +3,13 @@ import Navbar from "../components/NavBar";
 import Footer from "../components/Footer";
 import AboutHero from "../components/AboutHero";
 import About from "../components/AboutContent";
-
+import IndustriesWeServe from "../components/IndustriesWeServe";
+import ContactUs from "../components/ContactForm";
 
 export default function AboutUs() {
-    return (
-        <>
-            <style>{`
+  return (
+    <>
+      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
         
         /* Smooth scrolling for anchor links */
@@ -39,12 +40,14 @@ export default function AboutUs() {
           animation: bgZoom 20s ease-in-out infinite;
         }
       `}</style>
-            <div className="bg-neutral-950  font-['Open_Sans'] text-white selection:bg-yellow-500 selection:text-black">
-                <Navbar />
-                <AboutHero title="About Us" />
-            </div>
-            <About />
-            <Footer />
-        </>
-    );
+      <div className="bg-neutral-950  font-['Open_Sans'] text-white selection:bg-yellow-500 selection:text-black">
+        <Navbar />
+        <AboutHero title="About Us" />
+      </div>
+      <About />
+      <IndustriesWeServe />
+      <ContactUs />
+      <Footer />
+    </>
+  );
 }

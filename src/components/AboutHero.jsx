@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 const IMAGES = {
     default: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=1600&q=80",
     about: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
-    services: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80",
+    services: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80",
     blogs: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80",
     precision: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1600&q=80",

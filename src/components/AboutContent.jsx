@@ -32,7 +32,7 @@ export default function About() {
     const quoteRef = useRef(null);
 
     const paragraphs = [
-        "ZYTONIK PRECISION PTE LTD was founded in 2020 by Mr. Irwin Wilson. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation.",
+        "HYGENEIST SHIELD PTE LTD was founded in 2020. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation.",
         "The majority of our business has been producing customized products based on customer drawings and specifications, but sometimes we do provide solutions and ideas for customized requirements as well, going the extra mile whenever there is a need.",
         "As the need for precision and automation industry advances, we clearly understand the pace at which we need to travel to keep up our unique position, among our valuable customers who have shouldered us thus far.",
     ];
@@ -224,11 +224,11 @@ export default function About() {
                                 >
                                     {i === 0 && (
                                         <span className="font-semibold text-[#111]">
-                                            ZYTONIK PRECISION PTE LTD{" "}
+                                            HYGENEIST SHIELD PTE LTD{" "}
                                         </span>
                                     )}
                                     {i === 0
-                                        ? "was founded in 2020 by Mr. Irwin Wilson. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation."
+                                        ? "was founded in 2020. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation."
                                         : p}
                                 </p>
                             ))}
@@ -249,18 +249,6 @@ export default function About() {
                         </div>
 
                         {/* Quote */}
-                        <div
-                            ref={quoteRef}
-                            className="relative border-l-[3px] border-[#C9A227] pl-5 py-1"
-                        >
-                            <p className="text-[13px] leading-relaxed text-[#777] font-light italic">
-                                "Going the extra mile whenever there is a need — that's the Zytonik promise."
-                            </p>
-                            <p className="mt-1.5 text-[10px] font-semibold tracking-[0.2em] uppercase text-[#C9A227]"
-                                style={{ fontFamily: "'Rajdhani', sans-serif" }}>
-                                — Mr. Irwin Wilson, Founder
-                            </p>
-                        </div>
                     </div>
 
                     {/* RIGHT: Visual panel */}

@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NAV_LINKS = ["Home", "About", "Services", "Blogs", "Contact Us"];
+const NAV_LINKS = ["Home", "About", "Services", "Contact"];
 const SERVICE_LINKS = ["Precision", "Sheet Metal", "Automation Components", "Additive Manufacturing"];
 const PHONES = ["+65 8096 1060"];
 const EMAIL = "sales@hygeneistshield.com";
@@ -218,7 +218,7 @@ export default function Footer() {
                             {NAV_LINKS.map((link, i) => (
                                 <li key={link}>
                                     <a
-                                        href={link === "Home" ? "#" : `#${link.toLowerCase().replace(" ", "-")}`}
+                                        href={link==="Home" ? "/" : link.toLowerCase().replace(" ", "-")}
                                         ref={el => linkRefs.current[i] = el}
                                         className="inline-flex items-center gap-2 text-white/50 text-[12px] tracking-wide cursor-pointer select-none transition-none"
                                     >

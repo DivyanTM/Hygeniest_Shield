@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, ArrowRight, ShieldCheck } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 // Updated data structure to match the mega-menu categories in the screenshot
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "about" },
   {
     label: "Services",
-    href: "#services",
+    href: "services",
     isMegaMenu: true,
     categories: [
       {
@@ -48,14 +49,15 @@ const NAV_LINKS = [
       },
     ],
   },
-  { label: "Blogs", href: "#blogs" },
-  { label: "Contact Us", href: "#contact" },
+  // { label: "Blogs", href: "blogs" },
+  { label: "Contact Us", href: "contact" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,14 +69,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled
           ? "bg-neutral-950/95 backdrop-blur-md shadow-2xl shadow-black/50 py-4"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
-        
+
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group relative z-50">
           <div className="w-12 h-12 bg-yellow-500 flex items-center justify-center text-neutral-950 font-bold text-xl tracking-wider transition-transform group-hover:scale-105">
@@ -96,10 +97,11 @@ export default function Navbar() {
             <li key={link.label} className="relative group">
               {link.isMegaMenu ? (
                 // --- MEGA MENU TRIGGER ---
-                <div className="flex items-center gap-1 cursor-pointer font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase text-neutral-300 hover:text-yellow-500 transition-colors py-6">
+                <div onClick={() => navigate("/services")} className="flex items-center gap-1 cursor-pointer font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase text-neutral-300 hover:text-yellow-500 transition-colors py-6">
                   {link.label}
                   <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
-                  
+
+
                   {/* --- MEGA MENU DROPDOWN --- */}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 w-[90vw] max-w-[1200px] bg-white text-slate-900 border-t-4 border-yellow-500 shadow-2xl opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50 p-8 cursor-default">
                     <div className="grid grid-cols-5 gap-8">
@@ -132,9 +134,8 @@ export default function Navbar() {
                 // --- STANDARD LINK ---
                 <a
                   href={link.href}
-                  className={`font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors ${
-                    link.label === "Home" ? "text-yellow-500" : "text-neutral-300 hover:text-yellow-500"
-                  }`}
+                  className={`font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors ${link.label === "Home" ? "text-yellow-500" : "text-neutral-300 hover:text-yellow-500"
+                    }`}
                 >
                   {link.label}
                 </a>
@@ -164,23 +165,22 @@ export default function Navbar() {
 
       {/* --- MOBILE MENU --- */}
       <div
-        className={`fixed inset-0 top-[80px] bg-neutral-950 overflow-y-auto flex flex-col p-6 transition-transform duration-500 ease-in-out lg:hidden ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-0 top-[80px] bg-neutral-950 overflow-y-auto flex flex-col p-6 transition-transform duration-500 ease-in-out lg:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <ul className="flex flex-col gap-2 mt-4 pb-24">
           {NAV_LINKS.map((link) => (
             <li key={link.label} className="border-b border-white/10">
               {link.isMegaMenu ? (
                 <div className="flex flex-col">
-                  <button 
+                  <button
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                     className="font-['Rajdhani'] font-bold text-xl tracking-widest uppercase text-white hover:text-yellow-500 flex items-center justify-between py-4 w-full text-left"
                   >
                     {link.label}
                     <ChevronDown size={20} className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-yellow-500" : ""}`} />
                   </button>
-                  
+
                   {/* Mobile Accordion for Services */}
                   <div className={`overflow-hidden transition-all duration-300 ${mobileServicesOpen ? "max-h-[1000px] opacity-100 pb-4" : "max-h-0 opacity-0"}`}>
                     <div className="flex flex-col gap-6 pl-4 border-l-2 border-yellow-500/30 ml-2">
@@ -215,20 +215,20 @@ export default function Navbar() {
                 >
                   {link.label}
                 </a>
-              )}  
+              )}
             </li>
           ))}
         </ul>
-        
+
         {/* Mobile CTA (Fixed to bottom) */}
         <div className="fixed bottom-0 left-0 right-0 p-6 bg-neutral-950 border-t border-white/10">
-            <a
+          <a
             href="#contact"
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center justify-center gap-2 bg-yellow-500 text-neutral-950 font-['Rajdhani'] font-bold text-[16px] tracking-widest uppercase px-8 py-4 w-full"
-            >
+          >
             Get a Quote
-            </a>
+          </a>
         </div>
       </div>
     </nav>
