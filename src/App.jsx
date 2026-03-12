@@ -6,7 +6,7 @@ import Services from "./Pages/Services";
 
 export default function App() {
   return (
-    <Router basename="/hygeniest">
+    <Router />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
