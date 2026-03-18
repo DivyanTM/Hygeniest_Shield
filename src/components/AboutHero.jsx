@@ -299,7 +299,7 @@ export default function AboutHero({ title = "Page Title", subtitle = "" }) {
                         className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[#C9A227]"
                         style={{ fontFamily: "'Rajdhani', sans-serif" }}
                     >
-                        Zytonik Precision Pte Ltd
+                        Hygeniest Shield Pte Ltd
                     </span>
                 </div>
 

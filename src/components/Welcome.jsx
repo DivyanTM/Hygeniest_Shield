@@ -27,7 +27,7 @@ export default function Welcome() {
                     <div className="reveal-left">
                         <div className="section-tag mb-4">
                             <span className="gold-line" />
-                            Welcome to Zytonik
+                            Welcome to Hygeniest Shield 
                         </div>
                         <h2 className="text-5xl lg:text-6xl font-black display leading-tight mb-6 text-[var(--text-main)]">
                             ADVANCED PRECISION<br />

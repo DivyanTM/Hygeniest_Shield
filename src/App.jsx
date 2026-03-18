@@ -3,6 +3,7 @@ import Home from './Pages/home';
 import AboutUs from "./Pages/about";
 import ContactUSPage from "./Pages/contactus";
 import Services from "./Pages/Services";
+import ServiceDetailsPage from "./Pages/ServiceDetails";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUSPage />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/:slug" element={<ServiceDetailsPage/>}/>
       </Routes>
     </Router>
   );

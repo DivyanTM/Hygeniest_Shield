@@ -34,7 +34,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-1">Email</div>
-                                    <div className="text-slate-900 font-medium">sales@zytonik.com</div>
+                                    <div className="text-slate-900 font-medium">sales@hygeniestshield.com</div>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-center">
