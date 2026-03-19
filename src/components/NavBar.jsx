@@ -50,11 +50,6 @@ const NAV_LINKS = [
           { label: "3D Printing", slug: "3d-printing" },
         ],
       },
-      {
-        title: "Thermoforming",
-        slug:  "thermoforming",
-        items: [], // no sub-pages — clicks go directly to /services/thermoforming
-      },
     ],
   },
   { label: "Contact Us", href: "/contact" },

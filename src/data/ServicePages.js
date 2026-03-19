@@ -484,36 +484,6 @@ const servicePages = {
   },
 
   // ─── THERMOFORMING ──────────────────────────────────────────────────────────
-  "thermoforming": {
-    title: "Thermoforming",
-    intro: "Thermoforming is a versatile and cost-effective plastic manufacturing process ideal for large parts and moderate volumes. We produce high-quality thermoformed components in ABS, HIPS, PET, PETG, PC and other thermoplastic materials to your exact requirements.",
-    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=80",
-    features: [
-      { title: "Cost-Effective Tooling",    desc: "Lower tooling cost compared to injection moulding for medium production volumes." },
-      { title: "Large Part Capability",     desc: "Suitable for large enclosures, instrument panels and structural trays." },
-      { title: "Wide Material Range",       desc: "ABS, HIPS, PET, PETG, PC, HDPE and specialty thermoplastic grades." },
-      { title: "Vacuum & Pressure Forming", desc: "Both processes available for varying thickness, detail and draw requirements." },
-      { title: "Secondary Operations",      desc: "CNC trimming, routing, drilling and sub-assembly all performed in-house." },
-    ],
-    services: [
-      { title: "Vacuum Forming",            desc: "Economical forming of large thin-wall plastic components.",             image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&q=75" },
-      { title: "Pressure Forming",          desc: "Higher detail and thicker walls achieved with applied pressure assistance.", image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=400&q=75" },
-      { title: "Custom Trays & Packaging",  desc: "Formed plastic trays for component packaging and transit protection.",  image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=75" },
-      { title: "Enclosures & Panels",       desc: "Large formed enclosures, covers and equipment panel fronts.",           image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400&q=75" },
-    ],
-    industries: [
-      { name: "Electronics",      desc: "Custom enclosures, bezels and equipment housings.",                 image: IMG.electronics},
-      { name: "Automotive",       desc: "Interior panels, ducting and protective covers.",                   image: IMG.automotive },
-      { name: "Medical",          desc: "Sterile packaging trays and medical equipment covers.",             image: IMG.medical    },
-      { name: "Consumer Products",desc: "Retail packaging, display trays and point-of-sale items.",        image: IMG.consumer   },
-      { name: "Industrial",       desc: "Machine guards, covers and protective enclosures.",               image: IMG.industrial },
-    ],
-    cta: {
-      heading: "Get Thermoforming Solutions",
-      sub: "Share your part size, material requirements and volume and we will provide a competitive quote.",
-    },
-  },
-
 };
 
 export default servicePages;
