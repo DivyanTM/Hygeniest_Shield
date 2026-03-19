@@ -47,7 +47,7 @@ export default function ServiceDetailsPage(){
                   `}</style>
             <div className="bg-neutral-950  font-['Open_Sans'] text-white selection:bg-yellow-500 selection:text-black">
                 <Navbar />
-                <AboutHero title="Precision Componenets" />
+                <AboutHero title= {slug}/>
             </div>
             <div>
                 <ServicePageContent slug={slug}/>

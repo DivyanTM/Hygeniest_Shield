@@ -457,7 +457,7 @@ const servicePages = {
   "3d-printing": {
     title: "3D Printing",
     intro: "We offer multiple 3D printing technologies — FDM, SLA and SLS — each suited to different applications. Whether you need a concept model or functional prototypes for fit-and-function testing, we deliver accurate, clean parts fast.",
-    image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1642969164999-979483e21601?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     features: [
       { title: "FDM, SLA & SLS Technologies", desc: "FDM for quick concepts, SLA for fine detail, SLS for functional nylon parts." },
       { title: "Wide Material Range",          desc: "PLA, ABS, PETG, Nylon, Resin and engineering-grade polymer options." },
@@ -466,10 +466,10 @@ const servicePages = {
       { title: "Post-Processing Available",    desc: "Sanding, priming, painting and assembly finishing in-house." },
     ],
     services: [
-      { title: "FDM Printing",     desc: "Fused deposition modelling for robust concept and functional parts.",    image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=400&q=75" },
-      { title: "SLA Printing",     desc: "Stereolithography for high-resolution fine-detail display models.",     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=75" },
-      { title: "SLS Printing",     desc: "Selective laser sintering for durable, functional nylon components.",   image: "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=400&q=75" },
-      { title: "Post-Processing",  desc: "Finishing, painting and assembly of 3D printed components.",           image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=400&q=75" },
+      { title: "FDM Printing",     desc: "Fused deposition modelling for robust concept and functional parts.",    image:"https://hlhrapid.com/wp-content/uploads/2022/11/fused-deposition-modeling.jpg" },
+      { title: "SLA Printing",     desc: "Stereolithography for high-resolution fine-detail display models.",     image: "https://plus.unsplash.com/premium_photo-1714675572532-3153b016ac48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNsYSUyMDNkJTIwcHJpbnRpbmd8ZW58MHx8MHx8fDA%3D" },
+      { title: "SLS Printing",     desc: "Selective laser sintering for durable, functional nylon components.",   image: "https://plus.unsplash.com/premium_photo-1714978603309-0c55e9f75a5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2xzJTIwM2QlMjBwcmludGluZ3xlbnwwfHwwfHx8MA%3D%3D" },
+      { title: "Post-Processing",  desc: "Finishing, painting and assembly of 3D printed components.",           image: "https://images.unsplash.com/photo-1715059250871-08786b8a884a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXNzZW1ibGluZyUyMDNkJTIwcHJpbnR8ZW58MHx8MHx8fDA%3D" },
     ],
     industries: [
       { name: "Aerospace",         desc: "Lightweight concept and structural prototype components.",               image: IMG.aerospace  },

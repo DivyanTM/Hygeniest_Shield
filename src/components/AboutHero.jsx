@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const IMAGES = {
-    default: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=1600&q=80",
+    default: "https://images.unsplash.com/photo-1676935753519-a8dcb3ed5fe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjaGluYXJ5fGVufDB8fDB8fHww",
     about: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
     services: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80",
