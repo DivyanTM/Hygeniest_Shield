@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, ArrowRight, ShieldCheck } from "lucide-react";
-import { useNavigate, Link, useLocation } from "react-router-dom";
+import { ArrowRight, ChevronDown, Menu, ShieldCheck, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const NAV_LINKS = [
-  { label: "Home",       href: "/"        },
-  { label: "About",      href: "/about"   },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   {
     label: "Services",
     href: "/services",
@@ -12,40 +12,40 @@ const NAV_LINKS = [
     categories: [
       {
         title: "Precision Industry",
-        slug:  "precision-engineering",
+        slug: "precision-engineering",
         items: [
-          { label: "Precision Components",          slug: "precision-components"      },
-          { label: "CNC Wire Cut",                  slug: "cnc-wire-cut"              },
-          { label: "Precision CNC Milling",         slug: "precision-cnc-milling"     },
-          { label: "Precision CNC Turning",         slug: "precision-cnc-turning"     },
-          { label: "Customised Mould Inserts",      slug: "customised-mould-inserts"  },
-          { label: "EDM Electrodes",                slug: "edm-electrodes"            },
-          { label: "Milling Collets (Customized)",  slug: "milling-collets"           },
-          { label: "Milling Cutters (Customized)",  slug: "milling-cutters"           },
+          { label: "Precision Components", slug: "precision-components" },
+          { label: "CNC Wire Cut", slug: "cnc-wire-cut" },
+          { label: "Precision CNC Milling", slug: "precision-cnc-milling" },
+          { label: "Precision CNC Turning", slug: "precision-cnc-turning" },
+          { label: "Customised Mould Inserts", slug: "customised-mould-inserts" },
+          { label: "EDM Electrodes", slug: "edm-electrodes" },
+          { label: "Milling Collets (Customized)", slug: "milling-collets" },
+          { label: "Milling Cutters (Customized)", slug: "milling-cutters" },
         ],
       },
       {
         title: "Sheet Metal",
-        slug:  "sheet-metal",
+        slug: "sheet-metal",
         items: [
           { label: "Trolleys", slug: "trolleys" },
         ],
       },
       {
         title: "Automation Components",
-        slug:  "automation-components",
+        slug: "automation-components",
         items: [
-          { label: "Sub Assemblies",         slug: "sub-assemblies"         },
-          { label: "Jigs & Fixtures",        slug: "jigs-fixtures"          },
-          { label: "Value Added Services",   slug: "value-added-services"   },
-          { label: "Documentation",          slug: "documentation"          },
-          { label: "Rubber Components",      slug: "rubber-components"      },
+          { label: "Sub Assemblies", slug: "sub-assemblies" },
+          { label: "Jigs & Fixtures", slug: "jigs-fixtures" },
+          { label: "Value Added Services", slug: "value-added-services" },
+          { label: "Documentation", slug: "documentation" },
+          { label: "Rubber Components", slug: "rubber-components" },
           { label: "Contract Manufacturing", slug: "contract-manufacturing" },
         ],
       },
       {
         title: "Additive Manufacturing",
-        slug:  "additive-manufacturing",
+        slug: "additive-manufacturing",
         items: [
           { label: "3D Printing", slug: "3d-printing" },
         ],
@@ -56,12 +56,12 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [isScrolled,        setIsScrolled]        = useState(false);
-  const [mobileMenuOpen,    setMobileMenuOpen]    = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
-  const navigate  = useNavigate();
-  const location  = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   /* ── scroll listener ── */
   useEffect(() => {
@@ -81,11 +81,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        isScrolled
-          ? "bg-neutral-950/95 backdrop-blur-md shadow-2xl shadow-black/50 py-4"
-          : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled
+        ? "bg-neutral-950/95 backdrop-blur-md shadow-2xl shadow-black/50 py-4"
+        : "bg-transparent py-6"
+        }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between">
 
@@ -96,7 +95,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-['Rajdhani'] font-bold text-xl tracking-widest text-white uppercase leading-none">
-              Hygeneist
+              Hygenists
             </span>
             <span className="font-['Open_Sans'] text-[10px] font-semibold tracking-[0.2em] text-neutral-400 uppercase mt-1">
               Shield Pte Ltd.
@@ -113,11 +112,10 @@ export default function Navbar() {
                 <div className="relative">
                   <button
                     onClick={() => navigate("/services")}
-                    className={`flex items-center gap-1 font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors bg-transparent border-none cursor-pointer ${
-                      location.pathname.startsWith("/services")
-                        ? "text-yellow-500"
-                        : "text-neutral-300 hover:text-yellow-500"
-                    }`}
+                    className={`flex items-center gap-1 font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors bg-transparent border-none cursor-pointer ${location.pathname.startsWith("/services")
+                      ? "text-yellow-500"
+                      : "text-neutral-300 hover:text-yellow-500"
+                      }`}
                   >
                     {link.label}
                     <ChevronDown
@@ -190,9 +188,8 @@ export default function Navbar() {
                 /* ── STANDARD LINK ── */
                 <Link
                   to={link.href}
-                  className={`font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors ${
-                    isActive(link.href) ? "text-yellow-500" : "text-neutral-300 hover:text-yellow-500"
-                  }`}
+                  className={`font-['Rajdhani'] font-semibold text-[14px] tracking-widest uppercase py-6 transition-colors ${isActive(link.href) ? "text-yellow-500" : "text-neutral-300 hover:text-yellow-500"
+                    }`}
                   style={{ textDecoration: "none" }}
                 >
                   {link.label}
@@ -227,9 +224,8 @@ export default function Navbar() {
 
       {/* ── MOBILE MENU ── */}
       <div
-        className={`fixed inset-0 top-[80px] bg-neutral-950 overflow-y-auto flex flex-col p-6 transition-transform duration-500 ease-in-out lg:hidden ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-0 top-[80px] bg-neutral-950 overflow-y-auto flex flex-col p-6 transition-transform duration-500 ease-in-out lg:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <ul className="flex flex-col gap-2 mt-4 pb-32" style={{ listStyle: "none", margin: 0, padding: 0 }}>
           {NAV_LINKS.map((link) => (
@@ -244,17 +240,15 @@ export default function Navbar() {
                     {link.label}
                     <ChevronDown
                       size={20}
-                      className={`transition-transform duration-300 ${
-                        mobileServicesOpen ? "rotate-180 text-yellow-500" : ""
-                      }`}
+                      className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-yellow-500" : ""
+                        }`}
                     />
                   </button>
 
                   {/* Mobile accordion */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      mobileServicesOpen ? "max-h-[2000px] opacity-100 pb-4" : "max-h-0 opacity-0"
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ${mobileServicesOpen ? "max-h-[2000px] opacity-100 pb-4" : "max-h-0 opacity-0"
+                      }`}
                   >
                     <div className="flex flex-col gap-6 pl-4 border-l-2 border-yellow-500/30 ml-2">
                       {link.categories.map((category) => (

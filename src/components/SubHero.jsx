@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -164,7 +164,7 @@ export default function SubHero() {
                         className="text-[20px] font-semibold tracking-[0.3em] uppercase text-[#9a7a20]"
                         style={{ fontFamily: "'Rajdhani', sans-serif" }}
                     >
-                        Welcome to Hygeniest Shield
+                        Welcome to Hygenists Shield
                     </span>
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C9A227] animate-pulse" />
                 </div>

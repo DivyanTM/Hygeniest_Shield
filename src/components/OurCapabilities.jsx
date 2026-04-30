@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { useEffect, useRef } from 'react';
 
 
 const capabilities = [
     {
         title: "Sheet Metal",
-        description: "At Hygeniest Shield, we deliver custom sheet metal fabrication with precise cutting, bending, and welding. Our durable and lightweight solutions meet industry-specific requirements efficiently.",
+        description: "At Hygenists Shield, we deliver custom sheet metal fabrication with precise cutting, bending, and welding. Our durable and lightweight solutions meet industry-specific requirements efficiently.",
         image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800"
     },
     {
         title: "Reverse Engineering",
-        description: "Hygeniest Shield specializes in reverse engineering to replicate and modernize components. We use advanced 3D scanning and CAD modeling to enhance design accuracy and optimize performance.",
+        description: "Hygenists Shield specializes in reverse engineering to replicate and modernize components. We use advanced 3D scanning and CAD modeling to enhance design accuracy and optimize performance.",
         image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -20,7 +20,7 @@ const capabilities = [
     },
     {
         title: "Precision",
-        description: "At Hygeniest Shield, we specialize in high-precision engineering solutions, using advanced CNC machining to deliver accurate, durable components for critical applications in various industries.",
+        description: "At Hygenists Shield, we specialize in high-precision engineering solutions, using advanced CNC machining to deliver accurate, durable components for critical applications in various industries.",
         image: "https://images.unsplash.com/photo-1769147339214-076740872485?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -30,7 +30,7 @@ const capabilities = [
     },
     {
         title: "Laser Cut",
-        description: "Hygeniest Shield offers precision laser cutting services for smooth, burr-free edges and complex geometries. We handle metals, plastics, and composites with minimal waste and maximum accuracy.",
+        description: "Hygenists Shield offers precision laser cutting services for smooth, burr-free edges and complex geometries. We handle metals, plastics, and composites with minimal waste and maximum accuracy.",
         image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
     },
     {

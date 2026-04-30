@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +32,7 @@ export default function About() {
     const quoteRef = useRef(null);
 
     const paragraphs = [
-        "HYGENEIST SHIELD PTE LTD was founded in 2020. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation.",
+        "HYGENISTS SHIELD PTE LTD was founded in 2020. Ever since, we have been serving the precision industry mainly in the field of injection moulds & automation.",
         "The majority of our business has been producing customized products based on customer drawings and specifications, but sometimes we do provide solutions and ideas for customized requirements as well, going the extra mile whenever there is a need.",
         "As the need for precision and automation industry advances, we clearly understand the pace at which we need to travel to keep up our unique position, among our valuable customers who have shouldered us thus far.",
     ];
@@ -224,7 +224,7 @@ export default function About() {
                                 >
                                     {i === 0 && (
                                         <span className="font-semibold text-[#111]">
-                                            HYGENEIST SHIELD PTE LTD{" "}
+                                            HYGENISTS SHIELD PTE LTD{" "}
                                         </span>
                                     )}
                                     {i === 0

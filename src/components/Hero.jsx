@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const STATS = [
     { value: "10+", label: "Years Experience" },
@@ -47,7 +46,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="font-['Open_Sans'] text-base md:text-lg font-light leading-relaxed text-neutral-300 max-w-xl mb-10 border-l-2 border-yellow-500 pl-6 animate-reveal" style={{ animationDelay: '0.8s' }}>
-                        At Hygeniest Shield Pte Ltd, we deliver tailored engineering
+                        At Hygenists Shield Pte Ltd, we deliver tailored engineering
                         solutions to meet your unique needs. Our expertise in precision
                         machining and automation sets us apart in the industry.
                     </p>

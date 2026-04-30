@@ -1,8 +1,8 @@
-import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import { CheckCircle2 } from "lucide-react";
+import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,7 +41,7 @@ export default function About() {
                     <div className="about-left">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="w-10 h-[2px] bg-[var(--gold)]" />
-                            <span className="text-[var(--primary-blue)] font-bold tracking-[0.2em] uppercase text-sm">Welcome to Hygeniest Shield</span>
+                            <span className="text-[var(--primary-blue)] font-bold tracking-[0.2em] uppercase text-sm">Welcome to Hygenists Shield</span>
                         </div>
                         <h2 className="text-5xl lg:text-6xl font-black display leading-tight mb-6 text-slate-900">
                             ADVANCED PRECISION<br />

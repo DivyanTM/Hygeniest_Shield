@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
 
 const IMAGES = {
     default: "https://images.unsplash.com/photo-1676935753519-a8dcb3ed5fe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFjaGluYXJ5fGVufDB8fDB8fHww",
@@ -299,7 +299,7 @@ export default function AboutHero({ title = "Page Title", subtitle = "" }) {
                         className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[#C9A227]"
                         style={{ fontFamily: "'Rajdhani', sans-serif" }}
                     >
-                        Hygeniest Shield Pte Ltd
+                        Hygenists Shield Pte Ltd
                     </span>
                 </div>
 

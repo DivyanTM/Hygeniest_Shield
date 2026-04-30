@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
     return (
@@ -25,7 +25,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-1">Phone</div>
-                                    <div className="text-slate-900 font-medium">+65 6282 0555</div>
+                                    <div className="text-slate-900 font-medium">+65 89014965</div>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-center">
@@ -34,7 +34,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-1">Email</div>
-                                    <div className="text-slate-900 font-medium">sales@hygeniestshield.com</div>
+                                    <div className="text-slate-900 font-medium">sales@hygenists.com</div>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-center">

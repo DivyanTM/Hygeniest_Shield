@@ -1,14 +1,14 @@
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const NAV_LINKS = ["Home", "About", "Services", "Contact"];
 const SERVICE_LINKS = ["Precision", "Sheet Metal", "Automation Components", "Additive Manufacturing"];
-const PHONES = ["+65 8096 1060"];
-const EMAIL = "sales@hygeneistshield.com";
-const ADDRESS = "51 Woodland Close, #03-30 Primz Hub Centre, Singapore 737854";
+const PHONES = ["+65 89014965"];
+const EMAIL = "sales@hygenists.com";
+const ADDRESS = "48 Toh Guan East Road #08-100 Enterprises Hup,Singapore";
 
 const PhoneIcon = () => (
     <svg viewBox="0 0 20 20" fill="none" className="w-3.5 h-3.5 flex-shrink-0" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -158,7 +158,7 @@ export default function Footer() {
                             </div>
                             <div className="flex flex-col leading-tight">
                                 <span className="text-white font-bold text-[14px] tracking-[0.1em] uppercase" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
-                                    Hygeniest Shield
+                                    Hygenists Shield
                                 </span>
                                 <span className="text-white/35 text-[9px] tracking-[0.2em] uppercase font-light">
                                     Pte Ltd.
@@ -178,7 +178,7 @@ export default function Footer() {
                             </p>
                             <div className="flex items-center gap-3">
                                 <a
-                                    href="https://www.facebook.com/hygeneistshield"
+                                    href="https://www.facebook.com/hygenists"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group flex items-center justify-center w-9 h-9 border border-white/10 text-white/40 transition-none"
@@ -189,7 +189,7 @@ export default function Footer() {
                                     <FacebookIcon />
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/company/hygeneist-shield/"
+                                    href="https://www.linkedin.com/company/hygenists/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group flex items-center justify-center w-9 h-9 border border-white/10 text-white/40 transition-none"
@@ -218,7 +218,7 @@ export default function Footer() {
                             {NAV_LINKS.map((link, i) => (
                                 <li key={link}>
                                     <a
-                                        href={link==="Home" ? "/" : link.toLowerCase().replace(" ", "-")}
+                                        href={link === "Home" ? "/" : link.toLowerCase().replace(" ", "-")}
                                         ref={el => linkRefs.current[i] = el}
                                         className="inline-flex items-center gap-2 text-white/50 text-[12px] tracking-wide cursor-pointer select-none transition-none"
                                     >
@@ -329,7 +329,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <p className="text-[10px] text-white/25 tracking-wider">
                         © Copyright 2026{" "}
-                        <span className="text-white/40 font-semibold">Hygeniest Shield Pte Ltd.</span>{" "}
+                        <span className="text-white/40 font-semibold">Hygenists Shield Pte Ltd.</span>{" "}
                         All Rights Reserved.
                     </p>
                     <div className="flex items-center gap-6">

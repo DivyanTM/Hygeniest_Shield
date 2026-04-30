@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef, useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,8 +21,8 @@ const INFO = [
             </svg>
         ),
         label: "Customer Care",
-        value: "+65 8096 1060",
-        href: "tel:+6580961060",
+        value: "+65 89014965",
+        href: "tel:+65 89014965",
     },
     {
         icon: (
@@ -32,8 +32,8 @@ const INFO = [
             </svg>
         ),
         label: "Email",
-        value: "sales@hygeneistshield.com",
-        href: "mailto:sales@hygeneistshield.com",
+        value: "sales@hygenists.com",
+        href: "mailto:sales@hygenists.com",
     },
     {
         icon: (
@@ -43,7 +43,7 @@ const INFO = [
             </svg>
         ),
         label: "Address",
-        value: "51 Woodland Close, #03-30 Primz Hub Centre, Singapore 737854",
+        value: "48 Toh Guan East Road #08-100 Enterprises Hup,Singapore",
         href: "https://maps.google.com/?q=51+Woodland+Close+Singapore",
     },
 ];
@@ -261,7 +261,7 @@ export default function ContactUs() {
                                     className="text-white font-bold text-base tracking-wider uppercase"
                                     style={{ fontFamily: "'Rajdhani', sans-serif" }}
                                 >
-                                    Hygeniest Shield Pte Ltd
+                                    Hygenists Shield Pte Ltd
                                 </p>
                                 <p className="text-white/45 text-[10px] tracking-[0.22em] uppercase font-light mt-0.5">
                                     Singapore · Est. 2020
